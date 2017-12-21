@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>点点滴滴</title>
+		<link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstarp/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<!--UEditor-->
+		<script type="text/javascript" src="ueditor/ueditor.config.js"></script>
+		<script type="text/javascript" src="ueditor/ueditor.all.min.js"></script>
+		<script type="text/javascript" src="ueditor/lang/zh-cn/zh-cn.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var ue = UE.getEditor('editor');
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- header start -->
+		<div class="navbar navbar-default clear-bottom">
+			<div class="container">
+				<!-- logo start -->
+				<div class="navbar-header">
+					<a class="navbar-brand logo-style" href="/">
+						<img class="brand-img" src="img/logo.png" alt="点点滴滴">
+					</a>
+				</div>
+				<!-- logo end -->
+				<!-- navbar start -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">游记</a>
+						</li>
+						<li>
+							<a href="jieban.html">结伴而行</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								预留链接 <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">预留链接</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="login.html">登陆</a>
+						</li>
+						<li>
+							<a href="login.html">注册</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle user-active" data-toggle="dropdown" role="button">
+								<img class="img-circle" src="img/user.jpeg" />
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="sendyouji.html">
+										<i class="glyphicon glyphicon-edit"></i> 发布游记
+									</a>
+								</li>
+								<li>
+									<a href="sendjieban.html">
+										<i class="glyphicon glyphicon-edit"></i> 发布结伴
+									</a>
+								</li>
+								<li>
+									<a href="userSend.html">
+										<i class="glyphicon glyphicon-edit"></i> 我的发布
+									</a>
+								</li>
+								<li>
+									<a href="userSet.html">
+										<i class="glyphicon glyphicon-cog"></i> 设置
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="glyphicon glyphicon-off"></i> 退出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- navbar end -->
+			</div>
+		</div>
+		<!-- header end -->
+		<!-- title start -->
+		<div id="showImg" class="clear-padding title-img" style="background-image: url(img/page_default.jpg);">
+			<div class="show-title container">
+				<div class="title-info"><br />
+					<img src="img/addtop.png" onclick="openFile()"/>
+					<input id="file" type="file" style="display: none;" />
+					<script>
+						function openFile(){
+							$("#file").click();
+						}
+						$('#file').change(function() {
+					        $("#showImg").css({'background-image':"url("+window.URL.createObjectURL(this.files[0])+")"});
+					    });
+					</script>
+					<h3>
+						设置游记头图
+					</h3>
+					<span style="font-size: 16px;">
+						图片建议选择尺寸大于1680px的高清大图，如相机原图
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- title end -->
+		<!-- content start -->
+		<div class="container" id="a">
+			<div class="row" style="margin-top: 30px;">
+				<div class="panel">
+					<div class="panel-body mod-publish">
+						<div class="bd">
+							<div class="item item-place">
+								<span class="tet"><em>*</em>游记标题</span>
+								<div class="ui-input">
+									<input type="text" value="">
+								</div>
+							</div>
+							<div class="item item-place">
+								<span class="tet"><em>*</em>游记分类</span>
+								<div class="ui-input">
+									<select name="" placeholder="sss">
+										<option value="出游攻略">出游攻略</option>
+										<option value="旅游行记">旅游行记</option>
+										<option value="点点滴滴">点点滴滴</option>
+										<option value="所见所闻">所见所闻</option>
+									</select>
+								</div>
+							</div>
+							<script id="editor" type="text/plain" style="width:100%;height:500px;"></script>
+						</div>
+						<button class="block btn btn-warning" style="margin-top: 10px;">添加游记</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- fiex btn start-->
+			<div class="mfw-toolbar">
+				<div class="toolbar-item-top">
+					<a href="#a" role="button" class="btn">
+						<i class="glyphicon glyphicon-chevron-up"></i>
+					</a>
+				</div>
+			</div>
+			<!-- fiex btn end-->
+		</div>
+		<!-- content end-->
+
+		<!-- footers start -->
+		<div class="footers">
+			版权所有：南京网博 &nbsp; &nbsp; BY:chw0564
+		</div>
+		<!-- footers end -->
+
+	</body>
+
+</html>

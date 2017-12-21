@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>点点滴滴</title>
+    <link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bootstarp/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/userSetting.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <div class="navbar navbar-default clear-bottom">
+        <div class="container">
+            <!-- logo start -->
+            <div class="navbar-header">
+                <a class="navbar-brand logo-style" href="/">
+                    <img class="brand-img" src="img/logo.png" alt="点点滴滴">
+                </a>
+            </div>
+            <!-- logo end -->
+            <!-- navbar start -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">游记</a>
+                    </li>
+                    <li>
+                        <a href="jieban.html">结伴而行</a>
+                    </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="login.html">登陆</a>
+                    </li>
+                    <li>
+                        <a href="login.html">注册</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle user-active" data-toggle="dropdown" role="button">
+                            <img class="img-circle" src="img/user.jpeg" />
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="sendyouji.html">
+                                    <i class="glyphicon glyphicon-edit"></i> 发布游记
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sendjieban.html">
+                                    <i class="glyphicon glyphicon-edit"></i> 发布结伴
+                                </a>
+                            </li>
+                            <li>
+                                <a href="userSend.html">
+                                    <i class="glyphicon glyphicon-edit"></i> 我的发布
+                                </a>
+                            </li>
+                            <li>
+                                <a href="userSet.html">
+                                    <i class="glyphicon glyphicon-cog"></i> 设置
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-off"></i> 退出
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- navbar end -->
+        </div>
+    </div>
+    <!-- header end -->
+    <!-- content start -->
+    <div class="container" id="a">
+        <div class="row user-setting">
+            <div class="col-xs-3">
+                <ul class="list-group">
+                    <li class="list-group-item active" name="myYouJi">
+                        <i class="glyphicon glyphicon-open-file"></i> &nbsp;我的游记
+                    </li>
+                    <li class="list-group-item" name="myJieBan">
+                        <i class="glyphicon glyphicon-open-file"></i> &nbsp;我的结伴
+                    </li>
+                    <li class="list-group-item" name="myecharts">
+                        <i class="glyphicon glyphicon-open-file"></i> &nbsp;发布统计
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-9" id="userPanel">
+                <div class="panel panel-default" id="myYouJi">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">我的游记</h3>
+                    </div>
+                    <div class="panel-body">
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/youji/wKgBZ1lCLcSAJAcIAAYww7LcRBs97.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <div class="btn-youji">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">删除</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/youji/wKgBZ1lCLcSAJAcIAAYww7LcRBs97.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <div class="btn-youji">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">删除</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/youji/wKgBZ1lCLcSAJAcIAAYww7LcRBs97.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <div class="btn-youji">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">删除</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/youji/wKgBZ1lCLcSAJAcIAAYww7LcRBs97.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <div class="btn-youji">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">删除</a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="myJieBan" style="display: none;">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">我的结伴</h3>
+                    </div>
+                    <div class="panel-body">
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/destination/hotaddress6.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <ul class="list-unstyled list-inline">
+                                    <li><em>出发地：</em>兰州</li>
+                                    <li><em>出发时间：</em>2017-10-01</li>
+                                    <li><em>目的地：</em>四川|青海|甘肃|甘南</li>
+                                    <li><em>大约：</em>7天</li>
+                                    <li><em>希望人数：</em>6人</li>
+                                </ul>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">停行</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/destination/hotaddress6.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <ul class="list-unstyled list-inline">
+                                    <li><em>出发地：</em>兰州</li>
+                                    <li><em>出发时间：</em>2017-10-01</li>
+                                    <li><em>目的地：</em>四川|青海|甘肃|甘南</li>
+                                    <li><em>大约：</em>7天</li>
+                                    <li><em>希望人数：</em>6人</li>
+                                </ul>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">停行</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/destination/hotaddress6.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <ul class="list-unstyled list-inline">
+                                    <li><em>出发地：</em>兰州</li>
+                                    <li><em>出发时间：</em>2017-10-01</li>
+                                    <li><em>目的地：</em>四川|青海|甘肃|甘南</li>
+                                    <li><em>大约：</em>7天</li>
+                                    <li><em>希望人数：</em>6人</li>
+                                </ul>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">停行</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/destination/hotaddress6.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <ul class="list-unstyled list-inline">
+                                    <li><em>出发地：</em>兰州</li>
+                                    <li><em>出发时间：</em>2017-10-01</li>
+                                    <li><em>目的地：</em>四川|青海|甘肃|甘南</li>
+                                    <li><em>大约：</em>7天</li>
+                                    <li><em>希望人数：</em>6人</li>
+                                </ul>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">停行</a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl-horizontal my-user">
+                            <dt>
+                                <img src="img/destination/hotaddress6.jpeg" />
+                            </dt>
+                            <dd>
+                                <h4>2017在夏天过春节，纯净新西兰14天2500公里自驾游</h4>
+                                <ul class="list-unstyled list-inline">
+                                    <li><em>出发地：</em>兰州</li>
+                                    <li><em>出发时间：</em>2017-10-01</li>
+                                    <li><em>目的地：</em>四川|青海|甘肃|甘南</li>
+                                    <li><em>大约：</em>7天</li>
+                                    <li><em>希望人数：</em>6人</li>
+                                </ul>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-primary btn-warning">修改</a>
+                                    <a href="#" class="btn btn-primary btn-warning">停行</a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="myecharts">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">发布统计</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div id="main" style="width: 600px;height:400px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content end-->
+    <!-- footers start -->
+    <div class="footers" style="position: fixed;bottom: 0px;">
+        版权所有：南京网博 &nbsp; &nbsp; BY:XXXX
+    </div>
+    <!-- footers end -->
+</body>
+<script>
+var myChart = echarts.init(document.getElementById('main'));
+
+option = {
+    color: ['#ffa800'],
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: { // 坐标轴指示器，坐标轴触发有效
+            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '14%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis: [{
+        type: 'category',
+        name:'游记标题',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        axisTick: {
+            alignWithLabel: true
+        }
+    }],
+    yAxis: [{
+    	name:'评论数量',
+        type: 'value'
+    }],
+    series: [{
+        name: '评论数量',
+        type: 'bar',
+        barWidth: '60%',
+        data: [10, 52, 200, 334, 390, 330, 220]
+    }]
+};
+myChart.setOption(option);
+</script>
+
+</html>

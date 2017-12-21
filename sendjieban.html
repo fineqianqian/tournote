@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>点点滴滴</title>
+		<link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="swiper/css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="jquery-ui/jquery-ui.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstarp/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="swiper/js/swiper-3.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="jquery-ui/jquery-ui.js" ></script>
+		<script type="text/javascript" src="jquery-ui/datepicker-zh-cn.js" ></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$( function() {
+			    $( "#datepicker" ).datepicker();
+		  	} );			
+		</script>
+	</head>
+
+	<body>
+		<!-- header start -->
+		<div class="navbar navbar-default clear-bottom">
+			<div class="container">
+				<!-- logo start -->
+				<div class="navbar-header">
+					<a class="navbar-brand logo-style" href="/">
+						<img class="brand-img" src="img/logo.png" alt="点点滴滴">
+					</a>
+				</div>
+				<!-- logo end -->
+				<!-- navbar start -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">游记</a>
+						</li>
+						<li>
+							<a href="jieban.html">结伴而行</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								预留链接 <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">预留链接</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="login.html">登陆</a>
+						</li>
+						<li>
+							<a href="login.html">注册</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle user-active" data-toggle="dropdown" role="button">
+								<img class="img-circle" src="img/user.jpeg" />
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="sendyouji.html">
+										<i class="glyphicon glyphicon-edit"></i> 发布游记
+									</a>
+								</li>
+								<li>
+									<a href="sendjieban.html">
+										<i class="glyphicon glyphicon-edit"></i> 发布结伴
+									</a>
+								</li>
+								<li>
+									<a href="userSend.html">
+										<i class="glyphicon glyphicon-edit"></i> 我的发布
+									</a>
+								</li>
+								<li>
+									<a href="userSet.html">
+										<i class="glyphicon glyphicon-cog"></i> 设置
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="glyphicon glyphicon-off"></i> 退出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- navbar end -->
+			</div>
+		</div>
+		<!-- header end -->
+
+		<!-- content start -->
+		<div class="container" id="a">
+			<div class="row" style="margin-top: 30px;">
+				<div class="col-xs-12">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3>
+					  			发起结伴
+					  			<small>（一个真诚的请求，才会赢的更多靠谱的旅伴）</small>
+					  		</h3>
+						</div>
+						<div class="panel-body mod-publish">
+							<div class="bd">
+								<div class="item item-title">
+									<span class="tet"><em>*</em>活动标题</span>
+									<div class="ui-input">
+										<input type="text" class="inp-title" value="" placeholder="一句话开始一段靠谱旅程">
+									</div>
+								</div>
+								<div class="item item-contact">
+									<span class="tet"><em>*</em>联系方式</span>
+									<div class="ui-input inp-contact">
+										<span>手机/</span>
+										<input type="text" value="">
+									</div>
+									<div class="ui-input inp-contact">
+										<span>QQ/</span>
+										<input type="text">
+									</div>
+									<div class="ui-input inp-contact inp-last">
+										<span>微信/</span>
+										<input type="text">
+									</div>
+									<span style="margin-left: 10px; ">(可选填)</span>
+								</div>
+								<div class="item item-place">
+									<span class="tet"><em>*</em>目的地</span>
+									<div class="ui-input">
+										<input type="text" value="" placeholder="请输入目的地">
+									</div>
+								</div>
+								<div class="item item-place _j_select_from">
+									<span class="tet"><em>*</em>出发地</span>
+									<div class="ui-input inp-place">
+										<input type="text" placeholder="输入出发地">
+									</div>
+								</div>
+								<div class="item item-place">
+									<span class="tet"><em>*</em>出发时间</span>
+									<div class="ui-input inp-date">
+										<input id="datepicker" type="text" placeholder="出发日期">
+									</div>
+								</div>
+								<div class="item item-place">
+									<span class="tet"><em>*</em>活动天数</span>
+									<div class="ui-input inp-num">
+										<input type="text" value="" >
+									</div>
+									天
+								</div>
+								<div class="item item-place">
+									<span class="tet"><em>*</em>限制人数</span>
+									<div class="ui-input inp-num">
+										<input type="text">
+									</div>
+									人
+								</div>
+								<div class="item item-place">
+									<span class="tet"><em>*</em>结伴描述</span>
+									<div class="ui-textarea">
+										<textarea class="_j_description " style="width:856px;height: 244px;" 
+											placeholder="尽可能详细将你的意向说清楚，除非你愿意尝试下边的：
+a.如果你想结伴无人问津
+b.如果你想浪费更多时间在逐个沟通相同问题
+c.如果你想让旅途遇到猪队友"
+										></textarea>
+									</div>
+								</div>
+								<div class="item item-image">
+									<span class="tet"><em>*</em>封面图片</span>
+									<img id="showImg" src="img/add.png" onclick="openFile()"/>
+									<input id="file" type="file" style="display: none;" />
+									<script>
+										function openFile(){
+											$("#file").click();
+										}
+										$('#file').change(function() {
+									        $("#showImg").attr("src", window.URL.createObjectURL(this.files[0]));
+									    });
+									</script>
+								</div>
+								<div class="item item-action">
+									<button type="button" class="btn btn-warning">发表结伴</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- fiex btn start-->
+			<div class="mfw-toolbar">
+				<div class="toolbar-item-top">
+					<a href="#a" role="button" class="btn">
+						<i class="glyphicon glyphicon-chevron-up"></i>
+					</a>
+				</div>
+			</div>
+			<!-- fiex btn end-->
+		</div>
+		<!-- content end-->
+
+		<!-- footers start -->
+		<div class="footers">
+			版权所有：南京网博 &nbsp; &nbsp; BY:chw0564
+		</div>
+		<!-- footers end -->
+
+	</body>
+
+</html>

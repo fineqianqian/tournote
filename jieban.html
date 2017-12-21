@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>点点滴滴</title>
+		<link rel="stylesheet" type="text/css" href="bootstarp/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="jquery-ui/jquery-ui.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstarp/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery-ui/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="jquery-ui/datepicker-zh-cn.js" ></script>
+		<script>
+			$( function() {
+			    $( "#datepicker" ).datepicker();
+		  	} );			
+		</script>
+	</head>
+
+	<body>
+		<!-- header start -->
+		<div class="navbar navbar-default clear-bottom">
+			<div class="container">
+				<!-- logo start -->
+				<div class="navbar-header">
+					<a class="navbar-brand logo-style" href="/">
+						<img class="brand-img" src="img/logo.png" alt="点点滴滴">
+					</a>
+				</div>
+				<!-- logo end -->
+				<!-- navbar start -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">游记</a>
+						</li>
+						<li class="active">
+							<a href="jieban.html">结伴而行</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								预留链接 <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">预留链接</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="login.html">登陆</a>
+						</li>
+						<li>
+							<a href="login.html">注册</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle user-active" data-toggle="dropdown" role="button">
+								<img class="img-circle" src="img/user.jpeg" />
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="sendyouji.html">
+										<i class="glyphicon glyphicon-edit"></i> 发布游记
+									</a>
+								</li>
+								<li>
+									<a href="sendjieban.html">
+										<i class="glyphicon glyphicon-edit"></i> 发布结伴
+									</a>
+								</li>
+								<li>
+									<a href="userSend.html">
+										<i class="glyphicon glyphicon-edit"></i> 我的发布
+									</a>
+								</li>
+								<li>
+									<a href="userSet.html">
+										<i class="glyphicon glyphicon-cog"></i> 设置
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="glyphicon glyphicon-off"></i> 退出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- navbar end -->
+			</div>
+		</div>
+		<!-- header end -->
+		
+		<!-- title start -->
+		<div class="clear-padding title-img">
+			<div class="show-title container">
+                <div class="one-title">一个想法从脑中闪过：来一场旅行吧!</div>
+                <div class="two-title">旅途中我想与你为伴</div>
+		    </div>
+		</div>
+		<!-- title end -->
+		
+		<!-- content start -->
+		<div class="container" id="a">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header" style="margin-bottom: 0px;">
+						<h3>结伴热门地</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row hotaddress-css">
+				<div class="col-xs-3 item">
+					<img src="img/destination/hotaddress1.jpeg"/>
+					<div class="bg">
+						<div></div>
+					</div>
+					<div class="txt">
+                        <strong>稻城</strong>
+                        <p>发起 197 个结伴<br>2061 人关注<br>440 人报名</p>
+                    </div>
+				</div>
+				<div class="col-xs-3 item">
+					<img src="img/destination/hotaddress2.png"/>
+					<div class="bg">
+						<div></div>
+					</div>
+					<div class="txt">
+                        <strong>拉萨</strong>
+                        <p>发起 197 个结伴<br>2061 人关注<br>440 人报名</p>
+                    </div>
+				</div>
+				<div class="col-xs-3 item">
+					<img src="img/destination/hotaddress3.jpeg"/>
+					<div class="bg">
+						<div></div>
+					</div>
+					<div class="txt">
+                        <strong>青海湖</strong>
+                        <p>发起 197 个结伴<br>2061 人关注<br>440 人报名</p>
+                    </div>
+				</div>
+				<div class="col-xs-3 item">
+					<img src="img/destination/hotaddress4.jpeg"/>
+					<div class="bg">
+						<div></div>
+					</div>
+					<div class="txt">
+                        <strong>亚丁</strong>
+                        <p>发起 197 个结伴<br>2061 人关注<br>440 人报名</p>
+                    </div>
+				</div>
+				<div class="col-xs-3 item">
+					<img src="img/destination/hotaddress5.png"/>
+					<div class="bg">
+						<div></div>
+					</div>
+					<div class="txt">
+                        <strong>色达</strong>
+                        <p>发起 197 个结伴<br>2061 人关注<br>440 人报名</p>
+                    </div>
+				</div>
+				<div class="col-xs-3 item">
+					<img src="img/destination/hotaddress6.jpeg"/>
+					<div class="bg">
+						<div></div>
+					</div>
+					<div class="txt">
+                        <strong>额济纳旗</strong>
+                        <p>发起 197 个结伴<br>2061 人关注<br>440 人报名</p>
+                    </div>
+				</div>
+				<div class="col-xs-3 item">
+					<img src="img/destination/hotaddress7.png"/>
+					<div class="bg">
+						<div></div>
+					</div>
+					<div class="txt">
+                        <strong>西藏</strong>
+                        <p>发起 197 个结伴<br>2061 人关注<br>440 人报名</p>
+                    </div>
+				</div>
+				<div class="col-xs-3 item">
+					<img src="img/destination/hotaddress8.jpeg"/>
+					<div class="bg">
+						<div></div>
+					</div>
+					<div class="txt">
+                        <strong>敦煌</strong>
+                        <p>发起 197 个结伴<br>2061 人关注<br>440 人报名</p>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<form class="form-inline hot-search">
+					  	<div class="form-group">
+					    	<input type="text" class="form-control" placeholder="目的地">
+					  	</div>
+					  	<div class="form-group">
+					    	<input type="text" id="datepicker" class="form-control" placeholder="出发时间">
+					 	</div>
+					 	<button type="button" class="btn btn-primary">
+					  		<i class="glyphicon glyphicon-search"></i>&nbsp;查询
+					  	</button>
+					  	<button type="button" class="btn btn-warning" style="float: right;">
+					  		<i class="glyphicon glyphicon-plus"></i>&nbsp;发布我的结伴计划
+					  	</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content-back">
+			<div class="container" id="a">
+				<div class="row">
+					
+					<div class="col-xs-3">
+						<a href="jiebanDetail.html" target="_blank" class="hot-item">
+							<div class="panel clear-panel">
+							  <div class="panel-body">
+							    <div class="art-back clear-back">
+				                    <div class="add-padding-bottom">
+			                        	<img src="img/destination/address (1).jpeg">
+			                        	<div class="after">
+			                        		<b>12</b>天后
+			                        	</div>
+			                        	<hr class="after-hr" />
+				                    </div>
+				                    <h4>曼谷</h4>
+						            <div class="desc">我俩89年的，山东人，性格开朗，不矫情不墨迹。我们机票酒店...</div>
+						            <div class="user clearfix">
+						                <span class="avatar">
+						                	<img src="img/userImg/user01.jpeg">
+						                </span>
+						                <span class="name">沧海一粟</span>
+						            </div>
+						            <div class="attention">
+						            	<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+						            	已有<b>16</b>人加入
+						            </div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xs-3">
+						<a href="#" target="_blank" class="hot-item">
+							<div class="panel clear-panel">
+							  <div class="panel-body">
+							    <div class="art-back clear-back">
+				                    <div class="add-padding-bottom">
+			                        	<img src="img/destination/address (1).jpeg">
+			                        	<div class="after">
+			                        		<b>12</b>天后
+			                        	</div>
+			                        	<hr class="after-hr" />
+				                    </div>
+				                    <h4>曼谷</h4>
+						            <div class="desc">我俩89年的，山东人，性格开朗，不矫情不墨迹。我们机票酒店...</div>
+						            <div class="user clearfix">
+						                <span class="avatar">
+						                	<img src="img/userImg/user01.jpeg">
+						                </span>
+						                <span class="name">沧海一粟</span>
+						            </div>
+						            <div class="attention">
+						            	<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+						            	已有<b>16</b>人加入
+						            </div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xs-3">
+						<a href="#" target="_blank" class="hot-item">
+							<div class="panel clear-panel">
+							  <div class="panel-body">
+							    <div class="art-back clear-back">
+				                    <div class="add-padding-bottom">
+			                        	<img src="img/destination/address (1).jpeg">
+			                        	<div class="after">
+			                        		<b>12</b>天后
+			                        	</div>
+			                        	<hr class="after-hr" />
+				                    </div>
+				                    <h4>曼谷</h4>
+						            <div class="desc">我俩89年的，山东人，性格开朗，不矫情不墨迹。我们机票酒店...</div>
+						            <div class="user clearfix">
+						                <span class="avatar">
+						                	<img src="img/userImg/user01.jpeg">
+						                </span>
+						                <span class="name">沧海一粟</span>
+						            </div>
+						            <div class="attention">
+						            	<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+						            	已有<b>16</b>人加入
+						            </div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xs-3">
+						<a href="#" target="_blank" class="hot-item">
+							<div class="panel clear-panel">
+							  <div class="panel-body">
+							    <div class="art-back clear-back">
+				                    <div class="add-padding-bottom">
+			                        	<img src="img/destination/address (1).jpeg">
+			                        	<div class="after">
+			                        		<b>12</b>天后
+			                        	</div>
+			                        	<hr class="after-hr" />
+				                    </div>
+				                    <h4>曼谷</h4>
+						            <div class="desc">我俩89年的，山东人，性格开朗，不矫情不墨迹。我们机票酒店...</div>
+						            <div class="user clearfix">
+						                <span class="avatar">
+						                	<img src="img/userImg/user01.jpeg">
+						                </span>
+						                <span class="name">沧海一粟</span>
+						            </div>
+						            <div class="attention">
+						            	<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+						            	已有<b>16</b>人加入
+						            </div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xs-3">
+						<a href="#" target="_blank" class="hot-item">
+							<div class="panel clear-panel">
+							  <div class="panel-body">
+							    <div class="art-back clear-back">
+				                    <div class="add-padding-bottom">
+			                        	<img src="img/destination/address (1).jpeg">
+			                        	<div class="after">
+			                        		<b>12</b>天后
+			                        	</div>
+			                        	<hr class="after-hr" />
+				                    </div>
+				                    <h4>曼谷</h4>
+						            <div class="desc">我俩89年的，山东人，性格开朗，不矫情不墨迹。我们机票酒店...</div>
+						            <div class="user clearfix">
+						                <span class="avatar">
+						                	<img src="img/userImg/user01.jpeg">
+						                </span>
+						                <span class="name">沧海一粟</span>
+						            </div>
+						            <div class="attention">
+						            	<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+						            	已有<b>16</b>人加入
+						            </div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xs-3">
+						<a href="#" target="_blank" class="hot-item">
+							<div class="panel clear-panel">
+							  <div class="panel-body">
+							    <div class="art-back clear-back">
+				                    <div class="add-padding-bottom">
+			                        	<img src="img/destination/address (1).jpeg">
+			                        	<div class="after">
+			                        		<b>12</b>天后
+			                        	</div>
+			                        	<hr class="after-hr" />
+				                    </div>
+				                    <h4>曼谷</h4>
+						            <div class="desc">我俩89年的，山东人，性格开朗，不矫情不墨迹。我们机票酒店...</div>
+						            <div class="user clearfix">
+						                <span class="avatar">
+						                	<img src="img/userImg/user01.jpeg">
+						                </span>
+						                <span class="name">沧海一粟</span>
+						            </div>
+						            <div class="attention">
+						            	<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+						            	已有<b>16</b>人加入
+						            </div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xs-3">
+						<a href="#" target="_blank" class="hot-item">
+							<div class="panel clear-panel">
+							  <div class="panel-body">
+							    <div class="art-back clear-back">
+				                    <div class="add-padding-bottom">
+			                        	<img src="img/destination/address (1).jpeg">
+			                        	<div class="after">
+			                        		<b>12</b>天后
+			                        	</div>
+			                        	<hr class="after-hr" />
+				                    </div>
+				                    <h4>曼谷</h4>
+						            <div class="desc">我俩89年的，山东人，性格开朗，不矫情不墨迹。我们机票酒店...</div>
+						            <div class="user clearfix">
+						                <span class="avatar">
+						                	<img src="img/userImg/user01.jpeg">
+						                </span>
+						                <span class="name">沧海一粟</span>
+						            </div>
+						            <div class="attention">
+						            	<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+						            	已有<b>16</b>人加入
+						            </div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xs-3">
+						<a href="#" target="_blank" class="hot-item">
+							<div class="panel clear-panel">
+							  <div class="panel-body">
+							    <div class="art-back clear-back">
+				                    <div class="add-padding-bottom">
+			                        	<img src="img/destination/address (1).jpeg">
+			                        	<div class="after">
+			                        		<b>12</b>天后
+			                        	</div>
+			                        	<hr class="after-hr" />
+				                    </div>
+				                    <h4>曼谷</h4>
+						            <div class="desc">我俩89年的，山东人，性格开朗，不矫情不墨迹。我们机票酒店...</div>
+						            <div class="user clearfix">
+						                <span class="avatar">
+						                	<img src="img/userImg/user01.jpeg">
+						                </span>
+						                <span class="name">沧海一粟</span>
+						            </div>
+						            <div class="attention">
+						            	<i class="glyphicon glyphicon-chevron-right pull-right"></i>
+						            	已有<b>16</b>人加入
+						            </div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+				
+				<!-- fiex btn start-->
+				<div class="mfw-toolbar">
+				    <div class="toolbar-item-top">
+						<a href="#a" role="button" class="btn" >
+							<i class="glyphicon glyphicon-chevron-up"></i>
+						</a>
+					</div>
+				</div>
+				<!-- fiex btn end-->
+			</div>
+		</div>
+		<!-- content end-->
+		
+		<!-- footers start -->
+		<div class="footers">
+			版权所有：南京网博   &nbsp; &nbsp; BY:chw0564
+		</div>
+		<!-- footers end -->
+		
+	</body>
+
+</html>
